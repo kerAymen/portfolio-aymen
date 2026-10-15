@@ -91,8 +91,7 @@ function App() {
             <h2>Étudiant en informatique</h2>
 
             <p className="description">
-              Passionné par le développement Web et logiciel,
-              avec un intérêt marqué pour la cybersécurité.
+              Passionné par les technologies de l’information, particulièrement la cybersécurité, le cloud, les réseaux et le développement logiciel.
             </p>
 
                       
