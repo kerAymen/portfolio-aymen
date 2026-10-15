@@ -95,20 +95,30 @@ function App() {
               avec un intérêt marqué pour la cybersécurité.
             </p>
 
-            <div className="hero-buttons">
-              <a href="#projets" className="btn-primary">
-                Découvrir mes projets ↓
-              </a>
+                      
+          <div className="hero-buttons">
+            <a href="#projets" className="btn-primary">
+              Découvrir mes projets ↓
+            </a>
 
-              <a
-                href="https://github.com/kerAymen"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary"
-              >
-                Mon GitHub ↗
-              </a>
-            </div>
+            <a
+              href="https://github.com/kerAymen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
+              Mon GitHub ↗
+            </a>
+
+            <a
+              href="/CV_Aymen_Kermezli.pdf"
+              download="CV_Aymen_Kermezli.pdf"
+              className="btn-cv"
+            >
+              ↓ Télécharger mon CV
+            </a>
+          </div>
+
           </div>
 
           <div className="hero-visual">
@@ -231,7 +241,65 @@ function App() {
                   <span>Linux</span>
                 </div>
               </div>
+
+
+            
+          {/* CYBERSÉCURITÉ */}
+          <div className="skill-card">
+            <div className="skill-icon">🔐</div>
+            <h3>Cybersécurité</h3>
+            <div className="skill-tags">
+              <span>Tests d'intrusion en laboratoire</span>
+              <span>Reconnaissance passive et active</span>
+              <span>Analyse et exploitation de vulnérabilités</span>
+              <span>Kali Linux</span>
+              <span>Nmap</span>
+              <span>Metasploit</span>
+              <span>Wireshark</span>
             </div>
+          </div>
+
+          
+          {/* RÉSEAUX INFORMATIQUES */}
+          <div className="skill-card">
+            <div className="skill-icon">🌐</div>
+            <h3>Réseaux informatiques</h3>
+
+            <div className="skill-tags">
+              <span>TCP/IP</span>
+              <span>HTTP / HTTPS</span>
+              <span>Protocoles réseau</span>
+              <span>Notions de configuration réseau</span>
+            </div>
+          </div>
+
+          {/* SOUTIEN INFORMATIQUE */}
+          <div className="skill-card">
+            <div className="skill-icon">🛠️</div>
+            <h3>Soutien informatique</h3>
+            <div className="skill-tags">
+              <span>Dépannage informatique</span>
+              <span>Diagnostic de problèmes</span>
+              <span>Assistance aux utilisateurs</span>
+              <span>Gestion des billets</span>
+              <span>Octopus</span>
+              <span>GLPI</span>
+            </div>
+          </div>
+
+          {/* CLOUD */}
+          <div className="skill-card">
+            <div className="skill-icon">☁️</div>
+            <h3>Cloud</h3>
+
+            <div className="skill-tags">
+              <span>Infonuagique</span>
+              <span>Services cloud</span>
+              <span>Notions d'infrastructure cloud</span>
+            </div>
+          </div>
+
+          </div>
           </div>
         </section>
 
@@ -707,11 +775,7 @@ function App() {
         </p>
 
         <p className="experience-description">
-          Immersion pratique au sein du service de soutien
-          informatique du cégep dans le cadre de mon DEC en Techniques de l’informatique.
-          Cette immersion m'a permis de découvrir les activités d'assistance
-          technique et le fonctionnement d'un environnement
-          informatique professionnel.
+          Immersion pratique au sein du service de soutien informatique du Cégep Marie-Victorin, dans le cadre de mon DEC en Techniques de l’informatique. Cette expérience m’a permis de découvrir le fonctionnement d’un environnement informatique professionnel grâce à l’observation d’un technicien dans le traitement des demandes de soutien. J’ai également pris des notes, analysé les interventions observées et rédigé un rapport détaillé sur les billets traités.
         </p>
 
         <div className="experience-tags">
@@ -804,6 +868,20 @@ function App() {
               </div>
               <span className="contact-arrow">↗</span>
             </a>
+
+                        
+            <div className="contact-cv">
+              <p>Vous souhaitez en savoir plus sur mon parcours ?</p>
+
+              <a
+                href="/CV_Aymen_Kermezli.pdf"
+                download="CV_Aymen_Kermezli.pdf"
+                className="btn-cv-contact"
+              >
+                ↓ Télécharger mon CV
+              </a>
+            </div>
+
 
             <footer className="footer">
               <p>© {new Date().getFullYear()} Aymen Kermezli</p>

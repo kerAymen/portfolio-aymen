@@ -2064,3 +2064,114 @@ section {
 
 
 
+/* ========================================
+   TÉLÉCHARGEMENT DU CV
+   ======================================== */
+
+/* Bouton dans l'accueil */
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 60px;
+  padding: 16px 30px;
+  border: 1px solid rgba(147, 197, 253, 0.4);
+  border-radius: 12px;
+  background: rgba(59, 130, 246, 0.12);
+  color: #dbeafe;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn-cv:hover {
+  transform: translateY(-4px);
+  background: rgba(59, 130, 246, 0.25);
+}
+
+/* Section CV dans Contact */
+.contact-cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-cv p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+.btn-cv-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 15px 28px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #3b82f6, #8b5cf6);
+  color: white;
+  font-size: 14px;
+  font-weight: 750;
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-cv-contact:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.35);
+}
+
+@media (max-width: 480px) {
+  .btn-cv {
+    padding: 16px 17px;
+    font-size: 12px;
+  }
+
+  .btn-cv-contact {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+
+
+
+
+/* AGRANDIR LE BOUTON GITHUB DANS L'ACCUEIL */
+
+.hero-buttons .btn-secondary {
+  min-height: 58px;
+  padding: 17px 30px;
+  font-size: 16px;
+}
+
+/* AGRANDIR LE BOUTON CV DANS CONTACT */
+
+.contact-cv .btn-cv-contact {
+  min-height: 62px;
+  padding: 19px 38px;
+  font-size: 20px;
+}
+
+
+
+
+/* COMPÉTENCES — CARTES UNIFORMES */
+
+.skills-grid > .skill-card {
+  grid-column: auto;
+  grid-row: auto;
+  width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
